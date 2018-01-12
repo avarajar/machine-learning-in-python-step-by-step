@@ -24,16 +24,17 @@ For detailed virtualenv see `virtualenv <https://virtualenv.pypa.io/en/stable/>`
 MAC(OSX) issue
 ~~~~~~~~~~~~~~~
 
-if you have this error:
-`RuntimeError: Python is not installed as a framework. The Mac OS X backend will not be able to function correctly if Python is not installed as a framework`
+if you have this error:.
+
+**RuntimeError: Python is not installed as a framework. The Mac OS X backend will not be able to function correctly if Python is not installed as a framework**
 
 
 Problem Cause MacOS has a different image rendering back-end for matplotlib (The back-end renderer using the API of Cocoa by default). There are two types of renderers: Qt4Agg and GTKAgg. MacOS has a different default (than Windows or Linux, etc) so you'll need to set the back-end renderer of MacOSx.
 
 I resolved this issue this way:
 
-I assume you have installed the pip matplotlib, there is a directory in you root called `~/.matplotlib.`_
-Create a file `~/.matplotlib/matplotlibrc`_ there and add the following code: `backend: TkAgg`_
+I assume you have installed the pip matplotlib, there is a directory in you root called *~/.matplotlib.*
+Create a file *~/.matplotlib/matplotlibrc* there and add the following code: *backend: TkAgg*
 
 
 
