@@ -1,4 +1,4 @@
-# Load libraries
+
 import pandas
 from pandas.tools.plotting import scatter_matrix
 import matplotlib.pyplot as plt
@@ -52,9 +52,11 @@ seed = 7
 X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(
     X, Y, test_size=validation_size, random_state=seed)
 
+
 # Test options and evaluation metric
 seed = 7
 scoring = 'accuracy'
+
 
 # Spot Check Algorithms
 models = []
@@ -75,6 +77,7 @@ for name, model in models:
     msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
     print(msg)
 
+
 # Compare Algorithms
 fig = plt.figure()
 fig.suptitle('Algorithm Comparison')
@@ -82,6 +85,7 @@ ax = fig.add_subplot(111)
 plt.boxplot(results)
 ax.set_xticklabels(names)
 plt.show()
+
 
 # Make predictions on validation dataset
 knn = KNeighborsClassifier()
