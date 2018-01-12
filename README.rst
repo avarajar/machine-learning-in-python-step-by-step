@@ -18,6 +18,8 @@ Getting started
     cd machine-learning-in-python-step-by-step
     pip install -r requirements.txt
 
+For detailed virtualenv see `virtualenv <https://virtualenv.pypa.io/en/stable/>`_.
+
 MAC(OSX) issue
 ~~~~~~~~~~~~~~~
 
@@ -29,8 +31,8 @@ Problem Cause MacOS has a different image rendering back-end for matplotlib (The
 
 I resolved this issue this way:
 
-I assume you have installed the pip matplotlib, there is a directory in you root called `~/.matplotlib.`
-Create a file `~/.matplotlib/matplotlibrc` there and add the following code: `backend: TkAgg`
+I assume you have installed the pip matplotlib, there is a directory in you root called `~/.matplotlib.`_
+Create a file `~/.matplotlib/matplotlibrc`_ there and add the following code: `backend: TkAgg`_
 
 
 
@@ -43,8 +45,8 @@ Run machine learning script
 
 Screenshots
 ~~~~~~~~~~~~~~~
-.. screenshot::
-   :server_path: Univariate.png
+.. image:: Univariate.png
+   :width: 728 px
 
 .. screenshot::
    :server_path: Univariate_1.png
