@@ -12,6 +12,7 @@ Getting started
 ~~~~~~~~~~~~~~~
 
 .. code-block:: sh
+
 	git clone git@github.com:avarajar/machine-learning-in-python-step-by-step.git
     virtualenv <env_name>
     source env_name/bin/activate
@@ -40,20 +41,28 @@ Run machine learning script
 ~~~~~~~~~~~~~~~
 
 .. code-block:: sh
+
 	python example_script.py
 
 
-Screenshots
+SCREENSHOTS
+~~~~~~~~~~~~~~~
+
+Univariate Plots
 ~~~~~~~~~~~~~~~
 .. image:: Univariate.png
    :width: 728 px
 
-.. screenshot::
-   :server_path: Univariate_1.png
+.. image:: Univariate_1.png
+   :width: 728 px
 
-.. screenshot::
-   :server_path: Multivariate.png
+Multivariate Plots
+~~~~~~~~~~~~~~~
+.. image:: Multivariate.png
+   :width: 728 px
 
-.. screenshot::
-   :server_path: Model.png
+Better Model
+~~~~~~~~~~~~~~~
+.. image:: Model.png
+   :width: 728 px
 
